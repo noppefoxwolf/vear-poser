@@ -65,8 +65,9 @@ extension ViewController: BoneSelectorViewControllerDelegate {
         do {
             let encoder = JSONEncoder()
             let data = try encoder.encode(pose)
-            let json = String(data: data, encoding: .utf8)
-            let vc = UIActivityViewController(activityItems: [json], applicationActivities: nil)
+            let url = URL(fileURLWithPath: NSTemporaryDirectory() + "/\(UUID().uuidString).json")
+            try data.write(to: url)
+            let vc = UIActivityViewController(activityItems: [url], applicationActivities: nil)
             vc.popoverPresentationController?.sourceView = controller.navigationController?.navigationBar
             present(vc, animated: true, completion: nil)
         } catch {
@@ -77,6 +78,7 @@ extension ViewController: BoneSelectorViewControllerDelegate {
     func didTapImportButton(_ controller: BoneSelectorViewController) {
         let vc = UIDocumentPickerViewController(documentTypes: ["public.item"], in: .import)
         vc.popoverPresentationController?.sourceView = controller.navigationController?.navigationBar
+        vc.delegate = self
         present(vc, animated: true, completion: nil)
     }
 }

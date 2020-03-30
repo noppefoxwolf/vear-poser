@@ -75,7 +75,7 @@ class BodyBonePickerViewController: UIViewController, Embedable {
         case rightSholderButton:
             return .rightShoulder
         case leftSholderButton:
-            return .rightShoulder
+            return .leftShoulder
         case rightUpperArmButton:
             return .rightUpperArm
         case leftUpperArmButton:
