@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Closures",
+        "repositoryURL": "https://github.com/vhesener/Closures",
+        "state": {
+          "branch": "master",
+          "revision": "d42d1cea00b05fa6778e2a0e1601028b47a32f79",
+          "version": null
+        }
+      },
+      {
+        "package": "SFSafeSymbols",
+        "repositoryURL": "https://github.com/piknotech/SFSafeSymbols",
+        "state": {
+          "branch": null,
+          "revision": "31a99db357f2b839a18ab598c4aa87a741bd6009",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "VRMKit",
+        "repositoryURL": "https://github.com/tattn/VRMKit",
+        "state": {
+          "branch": null,
+          "revision": "ae5d24b82fcfd02eb07d8115eae5cfc457a4c116",
+          "version": "0.4.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

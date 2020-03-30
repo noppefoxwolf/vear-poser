@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,20 @@
 		37CFBA7D24310D57009B6932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CFBA7B24310D57009B6932 /* Main.storyboard */; };
 		37CFBA7F24310D5B009B6932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CFBA7E24310D5B009B6932 /* Assets.xcassets */; };
 		37CFBA8224310D5B009B6932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CFBA8024310D5B009B6932 /* LaunchScreen.storyboard */; };
+		37CFBA8B2432410C009B6932 /* VRMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37CFBA8A2432410C009B6932 /* VRMKit */; };
+		37CFBA8D2432410C009B6932 /* VRMSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37CFBA8C2432410C009B6932 /* VRMSceneKit */; };
+		37CFBA902432411D009B6932 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37CFBA8F2432411D009B6932 /* SnapKit */; };
+		37CFBA92243241EF009B6932 /* AliciaSolid.vrm in Resources */ = {isa = PBXBuildFile; fileRef = 37CFBA91243241EF009B6932 /* AliciaSolid.vrm */; };
+		37CFBA94243242AE009B6932 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBA93243242AE009B6932 /* ContainerView.swift */; };
+		37CFBA96243244B6009B6932 /* BoneSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBA95243244B6009B6932 /* BoneSelectorViewController.swift */; };
+		37CFBA98243244CF009B6932 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBA97243244CF009B6932 /* PreviewViewController.swift */; };
+		37CFBA9A2432567D009B6932 /* BodyBonePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBA992432567D009B6932 /* BodyBonePickerViewController.swift */; };
+		37CFBA9C24325694009B6932 /* BodyBonePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CFBA9B24325694009B6932 /* BodyBonePickerViewController.storyboard */; };
+		37CFBA9F2432673A009B6932 /* Closures in Frameworks */ = {isa = PBXBuildFile; productRef = 37CFBA9E2432673A009B6932 /* Closures */; };
+		37CFBAA124326998009B6932 /* LayoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBAA024326998009B6932 /* LayoutStackView.swift */; };
+		37CFBAA3243271FE009B6932 /* PoseSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */; };
+		37CFBAA52432729B009B6932 /* VRMSceneKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */; };
+		37CFBAA824327598009B6932 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 37CFBAA724327598009B6932 /* SFSafeSymbols */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,15 @@
 		37CFBA7E24310D5B009B6932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CFBA8124310D5B009B6932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37CFBA8324310D5B009B6932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CFBA91243241EF009B6932 /* AliciaSolid.vrm */ = {isa = PBXFileReference; lastKnownFileType = file; path = AliciaSolid.vrm; sourceTree = "<group>"; };
+		37CFBA93243242AE009B6932 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		37CFBA95243244B6009B6932 /* BoneSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneSelectorViewController.swift; sourceTree = "<group>"; };
+		37CFBA97243244CF009B6932 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		37CFBA992432567D009B6932 /* BodyBonePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBonePickerViewController.swift; sourceTree = "<group>"; };
+		37CFBA9B24325694009B6932 /* BodyBonePickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BodyBonePickerViewController.storyboard; sourceTree = "<group>"; };
+		37CFBAA024326998009B6932 /* LayoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutStackView.swift; sourceTree = "<group>"; };
+		37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseSkeleton.swift; sourceTree = "<group>"; };
+		37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VRMSceneKit+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CFBAA824327598009B6932 /* SFSafeSymbols in Frameworks */,
+				37CFBA9F2432673A009B6932 /* Closures in Frameworks */,
+				37CFBA902432411D009B6932 /* SnapKit in Frameworks */,
+				37CFBA8D2432410C009B6932 /* VRMSceneKit in Frameworks */,
+				37CFBA8B2432410C009B6932 /* VRMKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +84,7 @@
 		37CFBA7424310D57009B6932 /* vear-poser */ = {
 			isa = PBXGroup;
 			children = (
+				37CFBA91243241EF009B6932 /* AliciaSolid.vrm */,
 				37CFBA7524310D57009B6932 /* AppDelegate.swift */,
 				37CFBA7724310D57009B6932 /* SceneDelegate.swift */,
 				37CFBA7924310D57009B6932 /* ViewController.swift */,
@@ -63,6 +92,14 @@
 				37CFBA7E24310D5B009B6932 /* Assets.xcassets */,
 				37CFBA8024310D5B009B6932 /* LaunchScreen.storyboard */,
 				37CFBA8324310D5B009B6932 /* Info.plist */,
+				37CFBA93243242AE009B6932 /* ContainerView.swift */,
+				37CFBA95243244B6009B6932 /* BoneSelectorViewController.swift */,
+				37CFBA97243244CF009B6932 /* PreviewViewController.swift */,
+				37CFBA992432567D009B6932 /* BodyBonePickerViewController.swift */,
+				37CFBA9B24325694009B6932 /* BodyBonePickerViewController.storyboard */,
+				37CFBAA024326998009B6932 /* LayoutStackView.swift */,
+				37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */,
+				37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */,
 			);
 			path = "vear-poser";
 			sourceTree = "<group>";
@@ -83,6 +120,13 @@
 			dependencies = (
 			);
 			name = "vear-poser";
+			packageProductDependencies = (
+				37CFBA8A2432410C009B6932 /* VRMKit */,
+				37CFBA8C2432410C009B6932 /* VRMSceneKit */,
+				37CFBA8F2432411D009B6932 /* SnapKit */,
+				37CFBA9E2432673A009B6932 /* Closures */,
+				37CFBAA724327598009B6932 /* SFSafeSymbols */,
+			);
 			productName = "vear-poser";
 			productReference = 37CFBA7224310D57009B6932 /* vear-poser.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,12 @@
 				Base,
 			);
 			mainGroup = 37CFBA6924310D57009B6932;
+			packageReferences = (
+				37CFBA892432410C009B6932 /* XCRemoteSwiftPackageReference "VRMKit" */,
+				37CFBA8E2432411D009B6932 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				37CFBA9D2432673A009B6932 /* XCRemoteSwiftPackageReference "Closures" */,
+				37CFBAA624327598009B6932 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = 37CFBA7324310D57009B6932 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +175,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CFBA92243241EF009B6932 /* AliciaSolid.vrm in Resources */,
 				37CFBA8224310D5B009B6932 /* LaunchScreen.storyboard in Resources */,
 				37CFBA7F24310D5B009B6932 /* Assets.xcassets in Resources */,
 				37CFBA7D24310D57009B6932 /* Main.storyboard in Resources */,
+				37CFBA9C24325694009B6932 /* BodyBonePickerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CFBA94243242AE009B6932 /* ContainerView.swift in Sources */,
+				37CFBAA52432729B009B6932 /* VRMSceneKit+Extensions.swift in Sources */,
 				37CFBA7A24310D57009B6932 /* ViewController.swift in Sources */,
+				37CFBA9A2432567D009B6932 /* BodyBonePickerViewController.swift in Sources */,
+				37CFBA96243244B6009B6932 /* BoneSelectorViewController.swift in Sources */,
 				37CFBA7624310D57009B6932 /* AppDelegate.swift in Sources */,
 				37CFBA7824310D57009B6932 /* SceneDelegate.swift in Sources */,
+				37CFBA98243244CF009B6932 /* PreviewViewController.swift in Sources */,
+				37CFBAA124326998009B6932 /* LayoutStackView.swift in Sources */,
+				37CFBAA3243271FE009B6932 /* PoseSkeleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +397,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37CFBA892432410C009B6932 /* XCRemoteSwiftPackageReference "VRMKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tattn/VRMKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.2;
+			};
+		};
+		37CFBA8E2432411D009B6932 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		37CFBA9D2432673A009B6932 /* XCRemoteSwiftPackageReference "Closures" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vhesener/Closures";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37CFBAA624327598009B6932 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/piknotech/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37CFBA8A2432410C009B6932 /* VRMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CFBA892432410C009B6932 /* XCRemoteSwiftPackageReference "VRMKit" */;
+			productName = VRMKit;
+		};
+		37CFBA8C2432410C009B6932 /* VRMSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CFBA892432410C009B6932 /* XCRemoteSwiftPackageReference "VRMKit" */;
+			productName = VRMSceneKit;
+		};
+		37CFBA8F2432411D009B6932 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CFBA8E2432411D009B6932 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		37CFBA9E2432673A009B6932 /* Closures */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CFBA9D2432673A009B6932 /* XCRemoteSwiftPackageReference "Closures" */;
+			productName = Closures;
+		};
+		37CFBAA724327598009B6932 /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37CFBAA624327598009B6932 /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37CFBA6A24310D57009B6932 /* Project object */;
 }
