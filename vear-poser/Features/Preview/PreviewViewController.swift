@@ -11,7 +11,7 @@ import SceneKit
 import VRMSceneKit
 import SnapKit
 
-class PreviewViewController: UIViewController, Embedable {
+class PreviewViewController: UIViewController {
     private let scnView: SCNView = .init(frame: .zero)
     private var selectedBone: Humanoid.Bones? = nil
     private var vrmScene: VRMScene { scnView.scene as! VRMScene }
@@ -28,6 +28,7 @@ class PreviewViewController: UIViewController, Embedable {
         let scene = try! loader.loadScene()
         scene.background.contents = UIColor.systemGray6
         scnView.scene = scene
+        scene.vrmNode.simdOrientation = simd_quatf(angle: .pi, axis: .init(x: 0, y: 1, z: 0))
     }
     
     func setSelected(bone: Humanoid.Bones?) {

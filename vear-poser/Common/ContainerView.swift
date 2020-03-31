@@ -14,6 +14,9 @@ public protocol Embedable {
   func digUp(from: UIView) -> Self?
 }
 
+extension UIViewController: Embedable {}
+extension UIView: Embedable {}
+
 extension Embedable where Self: UIViewController {
   
   public func embed(to: UIView, parent: UIViewController) {

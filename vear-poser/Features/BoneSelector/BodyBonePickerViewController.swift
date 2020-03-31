@@ -14,7 +14,7 @@ protocol BonePickerDelegate: class {
     func bonePicker(_ controller: BodyBonePickerViewController, selected bone: Humanoid.Bones)
 }
 
-class BodyBonePickerViewController: UIViewController, Embedable {
+class BodyBonePickerViewController: UIViewController {
     static func make() -> BodyBonePickerViewController {
         UIStoryboard(name: "BodyBonePickerViewController", bundle: nil).instantiateInitialViewController()! as! BodyBonePickerViewController
     }

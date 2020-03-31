@@ -13,30 +13,47 @@ import SnapKit
 final class ViewController: UIViewController {
     private let boneSelectorView: ContainerView<BoneSelectorNavigationController> = .init()
     private let previewView: ContainerView<PreviewViewController> = .init()
+    private let hudView: ContainerView<HUDViewController> = .init()
     
     override func loadView() {
         super.loadView()
         view.addSubview(boneSelectorView)
         view.addSubview(previewView)
+        view.addSubview(hudView)
         
-        boneSelectorView.snp.makeConstraints({
-            $0.width.equalTo(320)
-            $0.top.left.bottom.equalToSuperview()
-        })
-        previewView.snp.makeConstraints({
-            $0.top.right.bottom.equalToSuperview()
-            $0.left.equalTo(boneSelectorView.snp.right)
-        })
-        let vc = BoneSelectorViewController()
-        let nc = BoneSelectorNavigationController(rootViewController: vc)
-        vc.delegate = self
-        boneSelectorView.embed(nc, parent: self)
-        previewView.embed(PreviewViewController(), parent: self)
+        BoneSelector: do {
+            boneSelectorView.snp.makeConstraints({
+                $0.width.equalTo(320)
+                $0.top.left.bottom.equalToSuperview()
+            })
+        }
+        
+        Preview: do {
+            previewView.snp.makeConstraints({
+                $0.top.right.bottom.equalToSuperview()
+                $0.left.equalTo(boneSelectorView.snp.right)
+            })
+            let vc = BoneSelectorViewController()
+            let nc = BoneSelectorNavigationController(rootViewController: vc)
+            vc.delegate = self
+            boneSelectorView.embed(nc, parent: self)
+            previewView.embed(PreviewViewController(), parent: self)
+        }
+        
+        HUD: do {
+            hudView.snp.makeConstraints({
+                $0.right.bottom.equalToSuperview().inset(20)
+            })
+            hudView.embed(HUDViewController(), parent: self)
+            hudView.backgroundColor = .clear
+            hudView.layer.cornerRadius = 6.0
+            hudView.layer.masksToBounds = true
+            hudView.isHidden = true
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
 

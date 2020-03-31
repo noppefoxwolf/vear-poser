@@ -27,6 +27,7 @@
 		37CFBAA3243271FE009B6932 /* PoseSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */; };
 		37CFBAA52432729B009B6932 /* VRMSceneKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */; };
 		37CFBAA824327598009B6932 /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = 37CFBAA724327598009B6932 /* SFSafeSymbols */; };
+		37CFBAAA243371D6009B6932 /* HUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFBAA9243371D5009B6932 /* HUDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		37CFBAA024326998009B6932 /* LayoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutStackView.swift; sourceTree = "<group>"; };
 		37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseSkeleton.swift; sourceTree = "<group>"; };
 		37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VRMSceneKit+Extensions.swift"; sourceTree = "<group>"; };
+		37CFBAA9243371D5009B6932 /* HUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,24 +86,81 @@
 		37CFBA7424310D57009B6932 /* vear-poser */ = {
 			isa = PBXGroup;
 			children = (
+				37CFBAAD24337812009B6932 /* Common */,
+				37CFBAAC24337804009B6932 /* Features */,
+				37CFBAAB243377E9009B6932 /* Resources */,
+			);
+			path = "vear-poser";
+			sourceTree = "<group>";
+		};
+		37CFBAAB243377E9009B6932 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37CFBA8324310D5B009B6932 /* Info.plist */,
+				37CFBA7B24310D57009B6932 /* Main.storyboard */,
+				37CFBA8024310D5B009B6932 /* LaunchScreen.storyboard */,
+				37CFBA7E24310D5B009B6932 /* Assets.xcassets */,
 				37CFBA91243241EF009B6932 /* AliciaSolid.vrm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37CFBAAC24337804009B6932 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				37CFBAB124337879009B6932 /* HUD */,
+				37CFBAB024337826009B6932 /* Main */,
+				37CFBAAF2433781F009B6932 /* Preview */,
+				37CFBAAE24337818009B6932 /* BoneSelector */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		37CFBAAD24337812009B6932 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */,
+				37CFBA93243242AE009B6932 /* ContainerView.swift */,
+				37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */,
+				37CFBAA024326998009B6932 /* LayoutStackView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		37CFBAAE24337818009B6932 /* BoneSelector */ = {
+			isa = PBXGroup;
+			children = (
+				37CFBA95243244B6009B6932 /* BoneSelectorViewController.swift */,
+				37CFBA992432567D009B6932 /* BodyBonePickerViewController.swift */,
+				37CFBA9B24325694009B6932 /* BodyBonePickerViewController.storyboard */,
+			);
+			path = BoneSelector;
+			sourceTree = "<group>";
+		};
+		37CFBAAF2433781F009B6932 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				37CFBA97243244CF009B6932 /* PreviewViewController.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		37CFBAB024337826009B6932 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				37CFBA7524310D57009B6932 /* AppDelegate.swift */,
 				37CFBA7724310D57009B6932 /* SceneDelegate.swift */,
 				37CFBA7924310D57009B6932 /* ViewController.swift */,
-				37CFBA7B24310D57009B6932 /* Main.storyboard */,
-				37CFBA7E24310D5B009B6932 /* Assets.xcassets */,
-				37CFBA8024310D5B009B6932 /* LaunchScreen.storyboard */,
-				37CFBA8324310D5B009B6932 /* Info.plist */,
-				37CFBA93243242AE009B6932 /* ContainerView.swift */,
-				37CFBA95243244B6009B6932 /* BoneSelectorViewController.swift */,
-				37CFBA97243244CF009B6932 /* PreviewViewController.swift */,
-				37CFBA992432567D009B6932 /* BodyBonePickerViewController.swift */,
-				37CFBA9B24325694009B6932 /* BodyBonePickerViewController.storyboard */,
-				37CFBAA024326998009B6932 /* LayoutStackView.swift */,
-				37CFBAA2243271FE009B6932 /* PoseSkeleton.swift */,
-				37CFBAA42432729B009B6932 /* VRMSceneKit+Extensions.swift */,
 			);
-			path = "vear-poser";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		37CFBAB124337879009B6932 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				37CFBAA9243371D5009B6932 /* HUDViewController.swift */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +257,7 @@
 				37CFBA7624310D57009B6932 /* AppDelegate.swift in Sources */,
 				37CFBA7824310D57009B6932 /* SceneDelegate.swift in Sources */,
 				37CFBA98243244CF009B6932 /* PreviewViewController.swift in Sources */,
+				37CFBAAA243371D6009B6932 /* HUDViewController.swift in Sources */,
 				37CFBAA124326998009B6932 /* LayoutStackView.swift in Sources */,
 				37CFBAA3243271FE009B6932 /* PoseSkeleton.swift in Sources */,
 			);
@@ -345,7 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
-				INFOPLIST_FILE = "vear-poser/Info.plist";
+				INFOPLIST_FILE = "vear-poser/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FBQ6Z8AF3U;
-				INFOPLIST_FILE = "vear-poser/Info.plist";
+				INFOPLIST_FILE = "vear-poser/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

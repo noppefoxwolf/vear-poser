@@ -19,7 +19,7 @@ protocol BoneSelectorViewControllerDelegate: class {
     func didTapImportButton(_ controller: BoneSelectorViewController)
 }
 
-class BoneSelectorNavigationController: UINavigationController, Embedable {
+class BoneSelectorNavigationController: UINavigationController {
     var boneSelectorViewController: BoneSelectorViewController { viewControllers.first as! BoneSelectorViewController }
 }
 
